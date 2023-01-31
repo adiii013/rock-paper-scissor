@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="score__container">
+        <div class="heading">
+           <p>Rock</p>
+           <p>Paper</p>
+           <p>Scissor</p>
+        </div>
+        <div class="score__board">
+            <p>Your</p>
+            <p>Score</p>
+            <p class="score">0</p>
+        </div>
+    </div>
+    <div class="component__container">
+         <div class="scissor__paper__container">
+              <div class="scissor__container circle scissor">
+                <img src="./assets/scissor.png" alt="" srcset="">
+              </div>
+              <div class="paper__container circle paper">
+                <img src="./assets/hand.png" alt="">
+              </div>
+         </div>
+         <div class="rock__container circle rock">
+              <img src="./assets/rock.png" alt="">
+         </div>
+        </div>
+
+        <div class="result__container">
+            <div class="player__container">
+                <p>You Picked</p>
+                <div class="player__result">
+                    
+                </div>
+            </div>
+            <div class="result__text__container">
+                <p class="result">You Win</p>
+                <p class="against">Against PC</p>
+                <button class="play__btn" onclick="playAgain()">Play Again</button>
+            </div>
+            <div class="pc__container">
+                <p>PC Picked</p>
+                <div class="pc__result">
+
+                </div>
+            </div>
+        </div>
+        <div class="popup__container">
+            <div class="popup" onclick="popFunction()">Rules
+                <img src="./assets/rules.png" class="popuptext" id="myPopup"/>
+              </div>
+        </div>
+          <script src="index.js"></script>
+</body>
+</html>
