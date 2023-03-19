@@ -1,4 +1,8 @@
 
+html,body {
+    background: #8CC461;
+}
+
 .star1 {
     position: absolute;
     margin-top: 260px;

@@ -26,7 +26,15 @@
         <p class="line2">YOU WON THE GAME</p>
     </div>
     <div class="play">
-        <button> <a href="./landing.html"> PLAY AGAIN</a></button>
+        <button> <a href="./index.html"> PLAY AGAIN</a></button>
     </div>
+
+    <script>
+        function onPlayAgain(){
+            sessionStorage.setItem('pc',0);
+            sessionStorage.setItem('player',0);
+            window.location.href('index.html');
+        }
+    </script>
 </body>
 </html>

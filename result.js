@@ -4,7 +4,10 @@ window.onload = function () {
     playerResult = sessionStorage.getItem('playerResult');
     document.querySelector('.Cscore').innerHTML =sessionStorage.getItem('pc');
     document.querySelector('.Yscore').innerHTML = sessionStorage.getItem('player');
-}
+    if(sessionStorage.getItem('pc')<sessionStorage.getItem('player')){
+      document.querySelector('.play').style.visibility = 'hidden'
+    }
+  }
 
 function playerIncrement() {
     var player =parseInt(sessionStorage.getItem('player'))+1;
@@ -98,6 +101,10 @@ const winner = () => {
 
 function playAgain(){
   window.location.href = 'index.html';
+}
+
+function next(){
+  window.location.href = 'won.html';
 }
 
 winner()
